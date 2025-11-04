@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel-Mate | AI-Powered Hostel Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Particles Background -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="logo-gradient">Hostel-Mate</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link nav-link-glow" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-glow" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-glow" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-glow" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-glow" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <div class="hero-content">
+                <h1 class="hero-title mb-4">
+                    Welcome to <span class="text-accent">Hostel-Mate</span>
+                </h1>
+                <p class="hero-subtitle mb-5">
+                    AI-Powered Smart Hostel Management for Students
+                </p>
+                <div class="hero-buttons mb-5">
+                    <button class="btn btn-primary btn-lg btn-glow me-3 mb-2">Login as Student</button>
+                    <button class="btn btn-outline-primary btn-lg btn-glow-outline mb-2">Login as Admin</button>
+                </div>
+                <div class="scroll-indicator">
+                    <p class="mb-2">Scroll to explore</p>
+                    <svg class="bounce" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 16V4m0 0l-3 3m3-3l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="powered-by mt-5">
+                    <span class="glow-text">✨ Powered by AI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Room Allocation</h3>
+                        <p class="feature-text">Automated room assignment based on preferences and availability</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="feature-title">AI Complaint Assistant</h3>
+                        <p class="feature-text">Instant support for your hostel-related issues and concerns</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Fee Tracker</h3>
+                        <p class="feature-text">Keep track of fees, payments, and financial transactions easily</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="feature-title">Chatbot Support</h3>
+                        <p class="feature-text">24/7 AI-powered chatbot for instant answers and guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="/placeholder.svg?height=400&width=500" alt="Hostel Students" class="img-fluid rounded about-image">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-divider"></div>
+                    <h2 class="section-title mb-4">About Hostel-Mate</h2>
+                    <p class="about-text mb-4">
+                        A modern solution for students to manage their hostel life easily — from rooms to fees to complaints — all powered by AI.
+                    </p>
+                    <p class="about-text mb-4">
+                        Hostel-Mate streamlines the entire hostel management experience, eliminating long queues and tedious paperwork. Our intelligent system learns from your preferences and automates repetitive tasks, giving you more time to focus on your studies and social life.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check text-accent"></i> Real-time room management</li>
+                        <li><i class="fas fa-check text-accent"></i> Transparent fee tracking</li>
+                        <li><i class="fas fa-check text-accent"></i> Quick complaint resolution</li>
+                        <li><i class="fas fa-check text-accent"></i> Community features for students</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">What Students Say</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Makes hostel life so much easier! No more long queues for room allotment. Everything is just a click away!"</p>
+                        <p class="testimonial-author">- Rajesh K., 2nd Year</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The AI chatbot answered all my questions instantly. Best hostel management system ever!"</p>
+                        <p class="testimonial-author">- Priya M., 3rd Year</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Finally, a transparent fee tracker! I can see exactly where my money goes. Highly recommended!"</p>
+                        <p class="testimonial-author">- Amit P., 1st Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="mailto:hello@hostelmate.com">hello@hostelmate.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-phone text-accent"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+91 7247658682</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>Davv Campus </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-dark border-accent" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-dark border-accent" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control bg-dark border-accent" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-glow w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section text-center py-4">
+        <div class="container">
+            <p class="mb-3 footer-tagline">Hostel-Mate — Smart Living Starts Here</p>
+            <div class="social-links mb-3">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-links mb-3">
+                <a href="#" class="footer-link">About</a>
+                <span class="divider">|</span>
+                <a href="#" class="footer-link">Contact</a>
+                <span class="divider">|</span>
+                <a href="#" class="footer-link">Terms</a>
+                <span class="divider">|</span>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+            <p class="text-muted small">&copy; 2025 Hostel-Mate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
